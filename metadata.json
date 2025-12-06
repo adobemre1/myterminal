@@ -1,0 +1,8 @@
+{
+  "name": "eCylogy",
+  "description": "The Universal Autonomous Coding Ecosystem v7.0.0 (Cognitive Mesh). Features Command Palette, Heuristic LSP, Voice Input, and Multimodal Vision.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

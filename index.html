@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCylogy - Universal Autonomous Coding Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              gray: {
+                750: '#2d3748',
+                850: '#1a202c',
+                950: '#0d1117',
+              },
+              ecy: {
+                primary: '#06b6d4', // Cyan 500
+                secondary: '#8b5cf6', // Violet 500
+                dark: '#080c14'
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #080c14;
+        color: #e2e8f0;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a202c; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #718096; 
+      }
+      /* Markdown Styles */
+      .markdown-body h1 { font-size: 2em; font-weight: bold; margin-bottom: 0.5em; color: #fff; border-bottom: 1px solid #30363d; padding-bottom: 0.3em; }
+      .markdown-body h2 { font-size: 1.5em; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em; color: #e2e8f0; border-bottom: 1px solid #30363d; padding-bottom: 0.3em; }
+      .markdown-body h3 { font-size: 1.25em; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em; color: #e2e8f0; }
+      .markdown-body p { margin-bottom: 1em; line-height: 1.6; }
+      .markdown-body code { background: #2d333b; padding: 0.2em 0.4em; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; }
+      .markdown-body pre { background: #161b22; padding: 1em; border-radius: 6px; overflow-x: auto; margin-bottom: 1em; border: 1px solid #30363d; }
+      .markdown-body pre code { background: transparent; padding: 0; }
+      .markdown-body ul { list-style-type: disc; padding-left: 1.5em; margin-bottom: 1em; }
+      .markdown-body ol { list-style-type: decimal; padding-left: 1.5em; margin-bottom: 1em; }
+      .markdown-body blockquote { border-left: 4px solid #30363d; padding-left: 1em; color: #8b949e; margin-bottom: 1em; }
+      .markdown-body a { color: #58a6ff; text-decoration: none; }
+      .markdown-body a:hover { text-decoration: underline; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "marked": "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
